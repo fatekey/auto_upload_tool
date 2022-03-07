@@ -81,7 +81,7 @@ def parse_args():
                         dest='mode',
                         choices=['upload', 'waf', 'race', 'dic'],
                         type=str,
-                        default='waf',
+                        default='dic',
                         help='模式,upload:自动上传测试,waf:绕过waf,race:条件竞争,dic:导出字典到剪切板')
     return parser.parse_args()
 
