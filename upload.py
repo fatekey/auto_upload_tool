@@ -95,7 +95,7 @@ if __name__ == '__main__':
         print('[*] 字典已经复制到剪切板')
     else:
         paste = pyperclip.paste()
-        paste = paste.replace('\r', '')
+        paste = paste.replace('\r\n', '\n')
         
     if args.mode == 'upload':
         filename_list = filename.get_filename(args.language, args.os,
