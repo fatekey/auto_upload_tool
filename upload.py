@@ -1,6 +1,4 @@
 import pyperclip, argparse, re
-
-from sqlalchemy import table
 import lib.HackRequests as HackRequests
 # import lib.race as race
 import lib.waf as waf
@@ -126,4 +124,3 @@ if __name__ == '__main__':
                 table.add_row([payload[0], success_str, result[1], result[2]])
         table = table.get_string(sortby='LENGTH')
         print(table)
-
