@@ -214,6 +214,9 @@ class hackRequests(object):
                         path,
                         skip_host=True,
                         skip_accept_encoding=True)
+        if body:
+            body = body.replace('\n', '\r\n')
+        del headers['Content-Length']
         for k, v in headers.items():
             conn.putheader(k, v)
         if body and "Content-Length" not in headers and "Transfer-Encoding" not in headers:
