@@ -47,5 +47,5 @@ optional arguments:
 ## race
 复制burpsuite中抓到的文件上传数据包,并指定上传成功后的路径,程序启动 20 线程进行上传和访问请求各 1000 次,访问结果为 200 则认为上传成功.
 # 参考项目
-https://github.com/boy-hack/hack-requests
-https://github.com/c0ny1/upload-fuzz-dic-builder
++ https://github.com/boy-hack/hack-requests
++ https://github.com/c0ny1/upload-fuzz-dic-builder
