@@ -1,6 +1,6 @@
 import pyperclip, argparse, re
 import lib.HackRequests as HackRequests
-# import lib.race as race
+import lib.race as race
 import lib.waf as waf
 import lib.filename as filename
 import prettytable as pt
@@ -124,3 +124,7 @@ if __name__ == '__main__':
                 table.add_row([payload[0], success_str, result[1], result[2]])
         table = table.get_string(sortby='LENGTH')
         print(table)
+    if args.mode == 'race':
+        print('[*] 正在进行条件竞争上传')
+        race.race(paste,args.url)
+        
